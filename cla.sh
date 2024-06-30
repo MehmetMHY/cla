@@ -1,29 +1,15 @@
+claude() {
+	DEFAULT_MODEL="claude-3-5-sonnet-20240620"
 
-#########################[CHA_CONFIGS]#########################
+	export ANTHROPIC_API_KEY=""
 
-# get OpenAI API key: https://platform.openai.com/api-keys
-export OPENAI_API_KEY=""
+	if [[ "$1" == "-f" && -n "$2" ]]; then
+		cla -m $DEFAULT_MODEL -f "$2"
+	elif [ $# -eq 0 ]; then
+		cla -tp "false" -m $DEFAULT_MODEL
+	else
+		cla -m $DEFAULT_MODEL -s "$*"
+	fi
 
-# get Brave API key: https://api.search.brave.com/app/keys
-export BRAVE_API_KEY=""
-
-# cha's github repo: https://github.com/MehmetMHY/cha
-# run Cha in interactive mode (chat interface) without arguments or in non-interactive mode (processing one or multiple string arguments) if an argument is provided
-ca () {
-    # set a default OpenAI model
-    #   - model list: https://platform.openai.com/docs/models
-    DEFAULT_MODEL="gpt-4o"
-
-    if [[ "$1" == "-f" && -n "$2" ]]; then
-        cha -m $DEFAULT_MODEL -f "$2"
-    elif [ $# -eq 0 ]; then
-        cha --model $DEFAULT_MODEL
-    else
-        cha -m $DEFAULT_MODEL -s "$*"
-    fi
+	unset ANTHROPIC_API_KEY
 }
-
-alias chatgpt="ca"
-
-#########################[CHA_CONFIGS]#########################
-
