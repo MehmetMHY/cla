@@ -30,11 +30,9 @@ A simple CLI chat tool designed for easy interaction with Anthropic's LLM models
 5. To start the tool, execute:
     ```bash
     cla
-    # or 
-    python3 main.py
     ```
 
-### (Optional) Setup `cla` Command
+## (Optional) Setup `claude` Command
 
 For easier use of `cla`, you can use the `cla.sh` script. Add the script to your main shell file (`.bashrc`, `.zshrc`, etc.):
 
