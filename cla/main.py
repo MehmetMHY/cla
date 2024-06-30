@@ -115,7 +115,6 @@ def chatbot(selected_model, print_title=True):
                 stream=True,
             )
 
-            print(colors.green("Claude:"), end=" ", flush=True)
             for chunk in response:
                 if chunk.type == "content_block_delta":
                     last_line = chunk.delta.text
@@ -217,13 +216,10 @@ def cli():
         if str(args.titleprint).lower() == "false":
             title_print_value = False
 
-        anthropic_models = scrapper.get_models()
+        selected_model = args.model
 
-        if args.model and any(
-            model["model"] == args.model for model in anthropic_models
-        ):
-            selected_model = args.model
-        else:
+        if selected_model == None:
+            anthropic_models = scrapper.get_models()
             print(colors.yellow("Available Anthropic Models:"))
             for i, model in enumerate(anthropic_models, 1):
                 print(colors.yellow(f"   {i}) {model['name']} ({model['model']})"))
