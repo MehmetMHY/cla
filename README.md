@@ -4,7 +4,7 @@
 
 ## About
 
-A simple CLI chat tool designed for easy interaction with Anthropic's LLM models. Cla is based on the [Cha](https://github.com/MehmetMHY/cla) project. Check out the demo [HERE](https://x.com/mehmet_mhy/status/1806670338908209352).
+A simple CLI chat tool designed for easy interaction with Anthropic's LLM models. Cla is based on the [Cha](https://github.com/MehmetMHY/cha) project. Check out the demo [HERE](https://x.com/mehmet_mhy/status/1806670338908209352).
 
 ## Alternatives
 
@@ -83,3 +83,4 @@ For developing `cla`, you can do the following:
 - [Anthropic Documentation](https://docs.anthropic.com/)
 - [Cha](https://github.com/MehmetMHY/cha)
 - [ChatGPT (GPT-4)](https://chat.openai.com/)
+
