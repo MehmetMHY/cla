@@ -25,7 +25,9 @@ def get_models():
 
     for d in data_dict:
         keys_to_remove = [
-            key for key, value in d.items() if "coming soon" in value.lower()
+            key
+            for key, value in d.items()
+            if "coming soon" in value.lower() or "later this year" in value.lower()
         ]
         for key in keys_to_remove:
             del d[key]
@@ -34,7 +36,7 @@ def get_models():
     output = []
     for entry in data_dict:
         model = entry.get("Model")
-        model_id = entry.get("Latest 1P API model name")
+        model_id = entry.get("Anthropic API")
         if model and model_id:
             output.append({"name": model, "model": model_id})
 
