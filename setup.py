@@ -2,14 +2,14 @@ from setuptools import setup, find_packages
 
 setup(
     name="cla",
-    version="0.1.0",
+    version="0.1.1",
     packages=find_packages(),
     license="MIT",
     description="A simple CLI chat tool to easily interface with Anthropic's LLM models",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     install_requires=[
-        "anthropic==0.29.0",
+        "anthropic==0.30.1",
         "beautifulsoup4==4.12.3",
     ],
     python_requires=">=3.10",

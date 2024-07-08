@@ -10,6 +10,14 @@ A simple CLI chat tool designed for easy interaction with Anthropic's LLM models
 
 If you want to use OpenAI's models in the CLI, check out [Cha](https://github.com/MehmetMHY/cha)!
 
+## Tests
+
+If you are developing Cla and also want to ensure certain web scraper components are working correctly, as web pages change over time, make sure to run Cla's unit tests before making any commits and periodically:
+
+```bash
+python -m unittest discover -s tests
+```
+
 ## Setup
 
 1. Get your Anthropic API key. Follow [this tutorial](https://docs.anthropic.com/en/docs/quickstart).
