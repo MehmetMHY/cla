@@ -18,6 +18,12 @@ If you are developing Cla and also want to ensure certain web scraper components
 python -m unittest discover -s tests
 ```
 
+Or, if you don't want to enter this command every time, run the following command:
+
+```bash
+bash test.sh
+```
+
 ## Setup
 
 1. Get your Anthropic API key. Follow [this tutorial](https://docs.anthropic.com/en/docs/quickstart).
