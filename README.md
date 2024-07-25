@@ -21,7 +21,7 @@ python -m unittest discover -s tests
 Or, if you don't want to enter this command every time, run the following command:
 
 ```bash
-bash test.sh
+bash tests/run.sh
 ```
 
 ## Setup
