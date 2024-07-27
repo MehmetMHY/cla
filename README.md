@@ -2,6 +2,10 @@
     <img width="300" src="./assets/logo.png">
 </p>
 
+## ⚠️ Deprecation Notice
+
+As of July 27, 2024, the Cla project (this repository) has been deprecated and will no longer be supported or maintained. You are welcome to fork this project and continue development independently. The [Cha](https://github.com/MehmetMHY/cha) project will continue to be actively maintained.
+
 ## About
 
 A simple CLI chat tool designed for easy interaction with Anthropic's LLM models. Cla is based on the [Cha](https://github.com/MehmetMHY/cha) project. Check out the demo [HERE](https://x.com/mehmet_mhy/status/1806670338908209352).
