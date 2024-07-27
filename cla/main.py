@@ -249,10 +249,6 @@ def cli():
             basic_chat(args.file, selected_model)
         else:
             try:
-                label_text = colors.red("✶ Anthropic")
-                if title_print_value == True:
-                    label_text += "\n"
-                print(label_text)
                 chatbot(selected_model, title_print_value)
             except KeyboardInterrupt:
                 print()

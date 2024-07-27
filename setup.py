@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="cla",
-    version="0.1.2",
+    version="0.1.3",
     packages=find_packages(),
     license="MIT",
     description="A simple CLI chat tool to easily interface with Anthropic's LLM models",
